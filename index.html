@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eine wichtige Frage ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url('IMG_3499.jpeg') center center/cover no-repeat fixed;
+    min-height:100vh;
+    color:white;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.72);
+    min-height:100vh;
+    padding:30px 20px;
+    text-align:center;
+}
+
+h1{
+    color:#ffd54f;
+    margin-bottom:15px;
+    font-size:2.8rem;
+}
+
+h2{
+    color:#ffd54f;
+    margin-bottom:15px;
+}
+
+.card{
+    max-width:800px;
+    margin:20px auto;
+    padding:25px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    backdrop-filter:blur(6px);
+}
+
+.question{
+    font-size:1.8rem;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+#countdown{
+    font-size:2rem;
+    color:#ffd54f;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.info{
+    text-align:left;
+    line-height:1.8;
+}
+
+.info ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.info li{
+    margin:10px 0;
+}
+
+.buttons{
+    margin-top:40px;
+    position:relative;
+    height:200px;
+}
+
+button{
+    border:none;
+    padding:16px 32px;
+    border-radius:14px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+#yesBtn{
+    background:#ff4f8b;
+    color:white;
+}
+
+#yesBtn:hover{
+    transform:scale(1.08);
+}
+
+#noBtn{
+    background:#444;
+    color:white;
+    position:absolute;
+    margin-left:20px;
+}
+
+#warning{
+    display:none;
+    max-width:700px;
+    margin:25px auto;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,193,7,0.15);
+    border:1px solid #ffd54f;
+    color:#ffd54f;
+}
+
+#success{
+    display:none;
+    max-width:700px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,105,180,0.15);
+    border:1px solid #ff7eb3;
+    color:#ffd1e3;
+    font-size:1.2rem;
+}
+
+.heart{
+    position:fixed;
+    top:-20px;
+    font-size:30px;
+    animation:fall 4s linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+.footer{
+    margin-top:30px;
+    opacity:0.8;
+    font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>⚠️ BACKROOMS ENTRY POINT ⚠️</h1>
+
+<div class="card">
+
+<p>Hey ❤️</p>
+
+<br>
+
+<p>Ich wollte dich etwas fragen.</p>
+
+<br>
+
+<p>
+<strong>
+Und weil eine normale Nachricht viel zu schwer zu formulieren wäre,
+habe ich gleich eine ganze Website dafür gebaut.
+</strong>
+</p>
+
+<div class="question">
+Möchtest du morgen mit mir ins Kino gehen und Backrooms schauen? 🍿
+</div>
+
+<div id="countdown"></div>
+
+</div>
+
+<div class="card info">
+
+<h2>⚠️ WICHTIGE INFORMATION</h2>
+
+<p>
+Leider besitze ich kein Auto und kann dich deshalb nicht abholen.
+</p>
+
+<br>
+
+<p>
+Ich verstehe vollkommen, wenn das für dich ein Grund wäre, nicht mitzukommen.
+</p>
+
+<br>
+
+<p>Aber bevor du entscheidest:</p>
+
+<ul>
+<li>✅ Ich verspreche einen schönen Abend.</li>
+<li>✅ Falls der Film gruselig wird, musst du ihn nicht alleine überstehen.</li>
+<li>✅ Popcorn schmeckt zu zweit deutlich besser.</li>
+<li>✅ Danach können wir gemeinsam darüber diskutieren, warum Menschen freiwillig in die Backrooms gehen.</li>
+<li>✅ Und am wichtigsten: Ich würde mich wirklich sehr freuen, den Abend mit dir zu verbringen.</li>
+</ul>
+
+</div>
+
+<h2>Also...</h2>
+
+<div class="question">
+Willst du mit mir ins Kino gehen? ❤️
+</div>
+
+<div class="buttons">
+<button id="yesBtn">JA ❤️</button>
+<button id="noBtn">NEIN 😈</button>
+</div>
+
+<div id="warning">
+<h3>⚠️ SYSTEMMELDUNG</h3>
+<br>
+Die Backrooms haben deine Auswahl verweigert.
+<br><br>
+Ein Verlassen dieses Pfades ist derzeit nicht möglich.
+<br><br>
+Bitte versuche es erneut.
+<br><br>
+<strong>Empfohlene Alternative: JA ❤️</strong>
+</div>
+
+<div id="success">
+<h2>❤️ Vielen Dank! ❤️</h2>
+
+<br>
+
+Du kannst dir gar nicht vorstellen, wie dankbar ich dafür bin.
+
+<br><br>
+
+Du hast mir gerade meinen Tag, meine Woche und wahrscheinlich meinen ganzen Monat verschönert.
+
+<br><br>
+
+Ich freue mich unglaublich auf den Abend mit dir. 🍿✨
+</div>
+
+<div class="footer">
+Backrooms Protocol v1.0
+</div>
+
+</div>
+
+<script>
+
+// Countdown bis morgen 19:30
+function updateCountdown() {
+
+    const target = new Date();
+    target.setDate(target.getDate() + 1);
+    target.setHours(19, 30, 0, 0);
+
+    const now = new Date();
+    const diff = target - now;
+
+    if(diff <= 0){
+        document.getElementById("countdown").innerHTML =
+        "⏳ Es ist Zeit fürs Kino!";
+        return;
+    }
+
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+    `⏳ ${hours}h ${minutes}m ${seconds}s`;
+}
+
+setInterval(updateCountdown,1000);
+updateCountdown();
+
+// Fliehender Nein-Button
+const noBtn = document.getElementById("noBtn");
+
+function moveButton() {
+
+    const maxX = window.innerWidth - 150;
+    const maxY = 180;
+
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+
+    document.getElementById("warning").style.display = "block";
+}
+
+noBtn.addEventListener("mouseenter", moveButton);
+noBtn.addEventListener("touchstart", moveButton);
+
+// Ja-Button
+document.getElementById("yesBtn").addEventListener("click", () => {
+
+    document.getElementById("success").style.display = "block";
+
+    for(let i = 0; i < 50; i++){
+
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 4000);
+    }
+
+    document.getElementById("success").scrollIntoView({
+        behavior:"smooth"
+    });
+});
+
+</script>
+
+</body>
+</html>
